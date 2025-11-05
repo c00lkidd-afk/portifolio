@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Syne+Tactile&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+body {
+
+    color: rgb(48, 28, 66);
+    font-family: "Syne Tactile", system-ui;
+    background: linear-gradient(90deg, rgba(117, 42, 155, 1) 0%, rgba(199, 87, 184, 1) 50%, rgba(237, 83, 237, 1) 100%);
+    height: 100vh;
+}
+
+a {
+    color: rgb(163, 88, 233);
+}
+
+h1 {
+    font-size: 60px;
+    transform: 0.5s;
+overflow: hidden;
+white-space: nowrap;
+animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite; 
+width: 0;
+border-right: 0.15em solid  rgb(48, 28, 66);
+}
+
+
+h1:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+
+section {
+
+    background: #4d1db5;
+    background: #6f4cbb;
+   
+    padding: 15px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+li a {
+
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.3s;
+
+}
+
+
+li a:hover {
+
+    font-size: 36px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+
+section:hover {
+
+    box-shadow: 31px 27px 61px 22px rgba(85,0,105,0.59);
+    transition: 0.3s;
+}
+
+
+
+@media only screen and (max-width: 600px) { }
+    header {
+    
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+
+#conteudo-principal {
+    width: 100%;
+    height: auto;
+      flex-direction: column;
+    justify-content: center;
+     display: flex;
+     background-color: #4d1db5;
+}
+h1 {
+    font-size: 25px;
+    transform: 0.5s;
+overflow: hidden;
+white-space: nowrap;
+animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite; 
+width: 0;
+border-right: 0.15em solid  rgb(48, 28, 66);
+}
+
+
+header ul{
+
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+ margin: 10px ;
+
+
+
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+
+
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #4d1db5;
+}
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+header {
+    width: 100%;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+#container {
+    display: flex;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+ 
+
+
+section:hover {
+
+    box-shadow: 0 0 25px  #4d1db5, 0 0 10px ; 
+    transform: perspective(600px) rotateY(5deg);
+    transition: transform 0.4s ease ;
+     transition: 0.3s;
+}
